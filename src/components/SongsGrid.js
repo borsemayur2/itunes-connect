@@ -5,7 +5,6 @@ import styled from "styled-components";
 import ReactAudioPlayer from "react-audio-player";
 
 const CustomCard = styled(Card)`
-  /* width: 300px; */
   margin: 10px;
   border-radius: 1rem;
 `;
