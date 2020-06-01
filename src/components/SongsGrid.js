@@ -31,7 +31,7 @@ const SongsGrid = (props) => {
       </Col>
       {data.map((e) => {
         return (
-          <Col span={6}>
+          <Col span={6} key={e.trackId}>
             <CustomCard
               loading={loading}
               title={
@@ -45,7 +45,7 @@ const SongsGrid = (props) => {
                 </Row>
               }
             >
-              <Row gutter={[16, 16]} key={e.trackId}>
+              <Row gutter={[16, 16]} >
                 {preview && <ReactAudioPlayer src={e.previewUrl} controls />}
                 <Col span={24}>by {e.artistName}</Col>
                 <Col span={24}>{e.collectionName}</Col>
